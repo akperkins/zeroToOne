@@ -19,6 +19,17 @@ public class Form {
     }
 
     public boolean hasEmptyField() {
+        for(String answer: map.values()){
+            if(Util.isEmpty(answer)){
+                return true;
+            }
+        }
         return false;
+    }
+
+    public void answer(Question question, String answer) {
+        Preconditions.checkNotNull(question);
+        Preconditions.checkNotNull(answer);
+        map.put(question, answer);
     }
 }
