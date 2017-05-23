@@ -5,13 +5,13 @@ public class Question {
     final private int id;
     final private String name;
 
-    public Question(String text, int id, String name) {
+    Question(String text, int id, String name) {
         this.text = text;
         this.id = id;
         this.name = name;
     }
 
-    public String getText() {
+    String getText() {
         return text;
     }
 

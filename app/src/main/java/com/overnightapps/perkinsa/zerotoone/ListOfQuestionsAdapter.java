@@ -12,7 +12,7 @@ import java.util.List;
 class ListOfQuestionsAdapter extends RecyclerView.Adapter<ListOfQuestionsAdapter.QuestionHolder> {
     private final List<Question> questionList;
 
-    public ListOfQuestionsAdapter(List<Question> questionList) {
+    ListOfQuestionsAdapter(List<Question> questionList) {
         this.questionList = questionList;
     }
 
@@ -34,11 +34,11 @@ class ListOfQuestionsAdapter extends RecyclerView.Adapter<ListOfQuestionsAdapter
 
     class QuestionHolder extends RecyclerView.ViewHolder {
 
-        public QuestionHolder(View itemView) {
+        QuestionHolder(View itemView) {
             super(itemView);
         }
 
-        public void update() {
+        void update() {
             Question question = questionList.get(getLayoutPosition());
             TextInputLayout inputLayout = (TextInputLayout) itemView.findViewById(R.id.input_layout_question);
             EditText et = (EditText) itemView.findViewById(R.id.answer);

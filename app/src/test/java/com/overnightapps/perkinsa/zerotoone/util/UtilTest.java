@@ -1,4 +1,4 @@
-package com.overnightapps.perkinsa.zerotoone;/*
+package com.overnightapps.perkinsa.zerotoone.util;/*
  * Copyright (c) 2016 Nick Mobile as an unpublished work. Neither
  * this material nor any portion thereof may be copied or distributed
  * without the express written consent of Nick Mobile.

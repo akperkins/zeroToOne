@@ -1,5 +1,8 @@
 package com.overnightapps.perkinsa.zerotoone;
 
+import com.overnightapps.perkinsa.zerotoone.util.Preconditions;
+import com.overnightapps.perkinsa.zerotoone.util.Util;
+
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -7,10 +10,10 @@ import java.util.Map;
 /**
  * This class is responsible for representing the mapping between question and answers by the user.
  * */
-public class Form {
+class Form {
     final private Map<Question, String> map;
 
-    public Form(List<Question> questionList) {
+    Form(List<Question> questionList) {
         Preconditions.checkNotEmpty(questionList);
         this.map = new LinkedHashMap<>();
         for(Question question: questionList){
@@ -18,7 +21,7 @@ public class Form {
         }
     }
 
-    public boolean hasEmptyField() {
+    boolean hasEmptyField() {
         for(String answer: map.values()){
             if(Util.isEmpty(answer)){
                 return true;
@@ -27,7 +30,7 @@ public class Form {
         return false;
     }
 
-    public void answer(Question question, String answer) {
+    void answer(Question question, String answer) {
         Preconditions.checkNotNull(question);
         Preconditions.checkNotNull(answer);
         map.put(question, answer);

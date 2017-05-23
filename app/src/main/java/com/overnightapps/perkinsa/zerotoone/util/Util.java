@@ -1,4 +1,4 @@
-package com.overnightapps.perkinsa.zerotoone;
+package com.overnightapps.perkinsa.zerotoone.util;
 
 public class Util {
     public static boolean isEmpty(String str){

@@ -1,8 +1,8 @@
-package com.overnightapps.perkinsa.zerotoone;
+package com.overnightapps.perkinsa.zerotoone.util;
 
 import java.util.Collection;
 
-class Preconditions {
+public class Preconditions {
     /**
      * Used to assert that an object is not null.
      * */

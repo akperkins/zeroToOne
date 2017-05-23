@@ -1,4 +1,4 @@
-package com.overnightapps.perkinsa.zerotoone;
+package com.overnightapps.perkinsa.zerotoone.util;
 
 import android.content.Context;
 
@@ -14,6 +14,7 @@ public class AndroidUtil {
         InputStream inputStream = context.getAssets().open(file);
         int size = inputStream.available();
         byte[] buffer = new byte[size];
+        //noinspection ResultOfMethodCallIgnored
         inputStream.read(buffer);
         inputStream.close();
         json = new String(buffer, "UTF-8");

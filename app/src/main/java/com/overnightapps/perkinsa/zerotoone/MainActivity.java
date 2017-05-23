@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.overnightapps.perkinsa.zerotoone.util.AndroidUtil;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -35,7 +36,7 @@ public class MainActivity extends LifecycleActivity {
             export.setOnClickListener(v -> {
                 //export form
                 if(form.hasEmptyField()){
-
+                    //to do finish implementing this
                 }
             });
         } catch (IOException e) {
