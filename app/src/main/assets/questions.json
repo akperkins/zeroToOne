@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name" : "Engineering",
+    "text" : "Can you create breakthrough technology instead of incremental improvements?"
+  },
+  {
+    "id": 2,
+    "name" : "Timing",
+    "text" : "Is now the right time to start your particular business?"
+},
+  {
+    "id": 3,
+    "name" : "Monopoly",
+    "text" : "Are you starting with a big share of a small market?"
+},  {
+  "id": 4,
+  "name" : "People",
+  "text" : "Do you have the right team?"
+},  {
+  "id": 5,
+  "name" : "Distribution",
+  "text" : "Do you have a way to not just create but deliver your product?"
+},  {
+  "id": 6,
+  "name" : "Durability",
+  "text" : "Will your market position be defensible 10 and 20 years into the future?"
+},  {
+  "id": 7,
+  "name" : "Secret",
+  "text" : "Have you identified a unique opportunity that others don’t see?"
+}
+]

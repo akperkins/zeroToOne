@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ZeroToOne</string>
+    <string name="what_is_the_name_of_the_business">What is the name of the business?</string>
+    <string name="description_of_business">Description of business</string>
+    <string name="export">Export</string>
+</resources>

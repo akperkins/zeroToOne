@@ -1,0 +1,127 @@
+# Copyright (c) 2015 Nick Mobile as an unpublished work. Neither
+# this material nor any portion thereof may be copied or distributed
+# without the express written consent of Nick Mobile.
+
+# This material also contains proprietary and confidential information
+# of 2015 Nick Mobile and its suppliers, and may not be used by or
+# disclosed to any person, in whole or in part, without the prior written
+# consent of 2015 Nick Mobile.
+
+# Android Studio project files.
+*.iml
+/.idea
+
+# Android SDK artifacts
+/local.properties
+
+# Build bins
+/build
+
+# Mac file artifacts
+.DS_Store
+
+# Gradle distributions
+.gradle
+
+# Ignore internal olmec
+/.olmec
+
+# http artifacts
+/tommy/httpCache
+/blue/httpCache
+
+# view hierarchy testing
+.navigation/
+
+# Proguard
+map.txt
+
+### BLUE
+
+# Python bytecode files
+*pyc
+
+# Android Studio project files.
+*.iml
+/.idea
+
+# Android SDK artifacts
+/local.properties
+
+# Build bins
+/build
+app/build
+
+# Mac file artifacts
+.DS_Store
+
+# Gradle distributions
+.gradle
+
+# Ignore internal olmec
+/.olmec
+
+# ignore nexus and keystore credentials
+/config/auth/nexus/nexus.properties
+
+# ignore mvn settings for ui tests
+/config/auth/mvn/settings.xml
+
+# Ignore Bento Resources folder
+/*/src/*/assets/BentoResources/
+/*/src/*/assets/bento/
+
+# generated files
+bin/
+gen/
+out/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+secure/
+
+# Intellij project files
+.idea/
+*.iws
+workspace.xml
+misc.xml
+.idea
+
+systrace.html
+
+*.zip
+.DS_Store
+*.apk
+*.ap_
+*.dex
+*.class
+
+target/
+
+.gradle/
+
+.classpath
+.project
+*.iml
+*.ipr
+gen-external-apklibs/
+
+# Misc logfiles in weird places
+ajcore.*.txt
+
+# Crashlytics
+res/values/com_crashlytics_export_strings.xml
+.crashlytics_data
+
+checkstyle-cachefile
+
+#TVE Validator Report file
+TVEValidationReport.txt
+
+# Aggrocrag installation and Android SDK
+.temp/
+.sdk/
+
+# Log Files and other garbage
+*.log
