@@ -1,6 +1,7 @@
 package com.overnightapps.perkinsa.zerotoone;
 
 import android.arch.lifecycle.LifecycleActivity;
+import android.arch.persistence.room.Room;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.overnightapps.perkinsa.zerotoone.data.FormDatabase;
 import com.overnightapps.perkinsa.zerotoone.util.AndroidUtil;
 
 import java.io.IOException;
@@ -42,6 +44,8 @@ public class MainActivity extends LifecycleActivity {
         } catch (IOException e) {
             displayMessage("Unable to load questions");
         }
+        FormDatabase db = Room.databaseBuilder(getApplicationContext(),
+                FormDatabase.class, "form-database").build();
     }
 
     private void displayMessage(String text) {
